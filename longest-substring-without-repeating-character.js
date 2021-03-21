@@ -6,6 +6,7 @@ let lengthOfLongestSubstring = function (s) {
 
   while (ptr2 < s.length) {
     const letter = s[ptr2];
+    // eslint-disable-next-line eqeqeq
     if (indices[letter] != null) {
       if (ptr2 - ptr1 > longest) {
         longest = ptr2 - ptr1;
